@@ -1,0 +1,112 @@
+@font-face {
+    font-family: ferrari;
+    src: url("./assets/FerroRosso.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.homeContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navContainer {
+    height: 3.5rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.headerLeftDiv {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+}
+
+.ferrariLogo {
+    height: 60%;
+
+}
+
+h2 {
+    margin: 0;
+    font-family: ferrari;
+    font-weight: 100;
+}
+
+.linksDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.cartButton {
+    height: 60%;
+    border: none;
+    display: flex;
+    background-color: inherit;
+}
+
+.cartLogo {
+    height: 100%;
+}
+
+.cartCount {
+    color: red;
+}
+
+.navLink {
+    color: black;
+    text-decoration: none;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.homeh1 {
+    text-align: center;
+    color: white;
+}
+
+.shopContainer {
+    background-color: #1e1b1b;
+    flex-grow: 1;
+    color: white;
+}
+
+.footerDiv {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ;
+}
