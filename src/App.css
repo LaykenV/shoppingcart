@@ -101,6 +101,45 @@ video {
     background-color: #1e1b1b;
     flex-grow: 1;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carDescription {
+    text-align: center;
+    width: 90%;
+}
+
+.carImage {
+    width: 80%;
+}
+
+.carName {
+    font-size: x-large;
+    margin: 0;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    margin-top: 2rem;
+}
+
+.addToCartDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .footerDiv {
@@ -108,5 +147,4 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ;
 }
