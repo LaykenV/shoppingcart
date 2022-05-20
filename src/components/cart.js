@@ -4,7 +4,6 @@ function Cart({ cartCars, cartCount, incrementAmount, decrementAmount, deleteFro
     const [finalPrice, setFinalPrice] = useState(0);
     const totalPrice = () => {
         let sum = 0;
-        console.log(cartCars);
         for (const car of cartCars) {
             if (car.amount > 1) {
                 sum += car.price * car.amount;

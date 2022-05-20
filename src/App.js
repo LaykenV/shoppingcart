@@ -18,10 +18,8 @@ function App() {
 
   const incrementAmountInShop = (e) => {
     const clickedCarId = e.target.parentNode.parentNode.id;
-    console.log(clickedCarId);
     let newArr = addAmount.map(x => x);
     newArr[clickedCarId] = newArr[clickedCarId] + 1;
-    console.log(newArr);
     setAddAmount(newArr);
 }
 
@@ -30,13 +28,11 @@ const decrementAmountInShop = (e) => {
   if (addAmount[clickedCarId] > 1) {
       let newArr = addAmount.map(x => x);
       newArr[clickedCarId] = newArr[clickedCarId] - 1;
-      console.log(newArr);
       setAddAmount(newArr);        }
 }
 
 const decrementAmountInCart = (e) => {
   const clickedCarId = e.target.parentNode.id;
-  console.log(clickedCarId);
   const carInCart = cartCars.find(element => element.id == clickedCarId);
   carInCart.amount = carInCart.amount - 1;
   let newArr = cartCars.map(x => x);
@@ -45,7 +41,6 @@ const decrementAmountInCart = (e) => {
 
 const incrementAmountInCart = (e) => {
   const clickedCarId = e.target.parentNode.id;
-  console.log(clickedCarId);
   const carInCart = cartCars.find(element => element.id == clickedCarId);
   carInCart.amount = carInCart.amount + 1;
   let newArr = cartCars.map(x => x);
@@ -58,7 +53,6 @@ const deleteFromCart = (e) => {
   const carInCart = newArr.find(element => element.id == clickedCarId);
   const index = newArr.indexOf(carInCart);
   newArr.splice(index, 1);
-  console.log(newArr);
   setCartCars(newArr);
 }
 
@@ -69,13 +63,9 @@ const clearCart = () => {
   const handleAddToCart = (e) => {
     const carId = e.target.parentNode.id;
     const clickedCar = cars.find(element => element.id == carId);
-    console.log(clickedCar);
     if (cartCars.find(element => element.id == carId)) {
-      console.log(cartCars);
       const carInCart = cartCars.find(element => element.id == carId);
-      console.log(carInCart);
       carInCart.amount = carInCart.amount + addAmount[carId];
-      console.log(carInCart.amount);
       let newArray = cartCars.map(x => x);
       setCartCars(newArray)
     } else if (!cartCars.find(element => element.id == carId)) {
@@ -103,7 +93,7 @@ const clearCart = () => {
       <Nav cartCount={cartCount} cartCars={cartCars}/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop cartCars={cartCars} handleAddToCart={handleAddToCart} addAmount={addAmount} incrementAmount={incrementAmountInShop} decrementAmount={decrementAmountInShop}/>} />
+        <Route path="/shop" element={<Shop cartCars={cartCars} handleAddToCart={handleAddToCart} addAmount={addAmount} incrementAmount={incrementAmountInShop} decrementAmount={decrementAmountInShop} setAddAmount={setAddAmount}/>} />
         <Route path="*" element={<Error />} />
         <Route path="/cart" element={<Cart  cartCars={cartCars} cartCount={cartCount} incrementAmount={incrementAmountInCart} decrementAmount={decrementAmountInCart} deleteFromCart={deleteFromCart} clearCart={clearCart}/>} />
       </Routes>

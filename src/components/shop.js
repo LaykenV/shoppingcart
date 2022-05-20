@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import cars from './carsData';
 
-function Shop({ handleAddToCart, cartCars, addAmount, decrementAmount, incrementAmount }) {
+function Shop({ handleAddToCart, cartCars, addAmount, decrementAmount, incrementAmount, setAddAmount }) {
 
+    useEffect(() => {
+        setAddAmount([1,1,1,1,1,1,1,1,1,1,1,1,1])
+    }, [])
     return(
         <div className='shopContainer'>
            {cars.map((car) => {

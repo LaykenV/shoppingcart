@@ -5,7 +5,7 @@ function Nav({ cartCount, cartCars }) {
     return(
         <nav className='navContainer'>
             <div className='headerLeftDiv'>
-                <h2>Ferrari</h2>
+                <h2><Link to="/" className='ferrariLink'>Ferrari</Link></h2>
                 <img className="ferrariLogo" alt='logo' src='https://www.carlogos.org/car-logos/ferrari-logo-750x1100.png'></img>
             </div>
             <div className='linksDiv'>
