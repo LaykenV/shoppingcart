@@ -82,6 +82,110 @@ h2 {
     text-decoration: none;
 }
 
+.cartDiv {
+    height: 100%;
+    background-color: #1e1b1b;
+    flex-direction: column;
+    flex-grow: 1;
+    color: white;
+}
+
+.cartHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.yourCart {
+    color: white;
+}
+
+.cartCarsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartCarContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.cartCarTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cartCarImg {
+    width: 10rem;
+}
+
+.cartCarTopRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartCarAmountContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+
+.cartCarAmountIncrement, .cartCarAmountDecrement {
+    background-color: inherit;
+    border: none;
+    color: white;
+}
+
+.cartCarAmount {
+    font-size: large;
+    font-weight: bold;
+}
+
+.cartCarPrice {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.cartCarDelete {
+    background-color: inherit;
+    color: white;
+    border: 1px white solid;
+}
+
+.cartBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.totalPrice {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.checkoutButton {
+    background-color: inherit;
+    color: black;
+    width: 80%;
+    height: 2rem;
+    background-color: rgb(177, 240, 60);
+}
+
 video {
     object-fit: cover;
     width: 100vw;
@@ -140,6 +244,28 @@ video {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.addToCartButton {
+    background-color: inherit;
+    border: 1px solid white;
+    color: white;
+    padding: .5rem;
+    border-radius: 5%;
+}
+
+.addToCartAmount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.addToCartAmountButton {
+    background-color: inherit;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5%;
 }
 
 .footerDiv {
