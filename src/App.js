@@ -89,7 +89,7 @@ const clearCart = () => {
   }, [cartCars]);
 
   return (
-    <BrowserRouter basename='/app'>
+    <BrowserRouter>
       <Nav cartCount={cartCount} cartCars={cartCars}/>
       <Routes>
         <Route path="/" element={<Home />} />
