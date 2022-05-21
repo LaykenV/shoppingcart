@@ -11,12 +11,16 @@ function Cart({ cartCars, cartCount, incrementAmount, decrementAmount, deleteFro
                 sum += Number(car.price)
             }
         }
-        setFinalPrice(sum);
+        setFinalPrice(sum.toLocaleString());
     }
 
     useEffect(() => {
         totalPrice();
     }, [cartCars])
+
+    const addCommas = (str) => {
+
+    }
 
     return(
         <div className='cartDiv'>
@@ -36,7 +40,7 @@ function Cart({ cartCars, cartCount, incrementAmount, decrementAmount, deleteFro
                                             <p className='cartCarAmount'>{car.amount}</p>
                                             <button className='cartCarAmountIncrement' onClick={incrementAmount}>+</button>
                                         </div>
-                                        <p className='cartCarPrice'>${car.price * car.amount}</p>
+                                        <p className='cartCarPrice'>${(car.price * car.amount).toLocaleString()}</p>
                                     </div>
                                 </div>
                                 <div className='cartCarBottom' id={car.id}>
