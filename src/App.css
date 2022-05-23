@@ -94,7 +94,7 @@ h2 {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .cartCount {
@@ -102,6 +102,7 @@ h2 {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: ;
 }
 
 .navLink {
