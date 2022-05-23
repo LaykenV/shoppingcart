@@ -18,9 +18,6 @@ function Cart({ cartCars, cartCount, incrementAmount, decrementAmount, deleteFro
         totalPrice();
     }, [cartCars])
 
-    const addCommas = (str) => {
-
-    }
 
     return(
         <div className='cartDiv'>

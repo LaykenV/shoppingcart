@@ -92,7 +92,7 @@ const cars = [
       image:
         "https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd5528584077c3b243282c4-line-up-ferrari-gtc4lusso-t?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750",
       price: "145000",
-      description: `The new GTC4Lusso T is equipped with an evolution of the 3.9-litre V8 turbo which punches out a maximum of 610 cv at 7,500 rpm, guaranteeing powerful acceleration with maximum torque of 760 Nm available between 3,000 and 5,250 rpm. Despite such impressive performance, the GTC4Lusso T’s fuel consumption ﬁgures guarantee extended range, ideal for town driving or long trips. Combining this powertrain with rear-wheel drive has resulted in signiﬁcant weight-saving. Adding four-wheel steering to the mix gives the car additional agility and quicker responses. The rearwheel steering system is integrated with the latest evolution of the electronic controls of the SCME suspension, ESP 9.0 and third generation Side Slip Control (SSC3).`,
+      description: `The new GTC4Lusso T is equipped with an evolution of the 3.9-litre V8 turbo which punches out a maximum of 610 cv at 7,500 rpm, guaranteeing powerful acceleration with maximum torque of 760 Nm available between 3,000 and 5,250 rpm. Despite such impressive performance, the GTC4Lusso T’s fuel consumption ﬁgures guarantee extended range, ideal for town driving or long trips.`,
     },
     {
       amount: 1,

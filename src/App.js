@@ -34,9 +34,11 @@ const decrementAmountInShop = (e) => {
 const decrementAmountInCart = (e) => {
   const clickedCarId = e.target.parentNode.id;
   const carInCart = cartCars.find(element => element.id == clickedCarId);
-  carInCart.amount = carInCart.amount - 1;
-  let newArr = cartCars.map(x => x);
-  setCartCars(newArr);
+  if (carInCart.amount > 1) {
+    carInCart.amount = carInCart.amount - 1;
+    let newArr = cartCars.map(x => x);
+    setCartCars(newArr);
+  }
 }
 
 const incrementAmountInCart = (e) => {

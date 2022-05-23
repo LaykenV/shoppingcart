@@ -111,6 +111,10 @@ h2 {
     padding: .5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 .cartDiv {
     height: 100%;
     background-color: #1e1b1b;
