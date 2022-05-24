@@ -68,3 +68,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Project Description
+
+A responsive store with a functioning cart built using Create-React-App.
+
+[Live Demo](https://laykenv.github.io/shoppingcart)
+
+## Getting Started 
+
+### `git clone https://github.com/LaykenV/shoppingcart.git`
+### `cd shoppingcart`
+### `npm install`
+### `npm start`
+
+## Objectives
+
+The main motivation for this work was to design and deploy a multiple page application using `react-router-dom´.
+
+
+
+
+
