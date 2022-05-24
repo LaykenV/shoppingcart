@@ -77,10 +77,10 @@ A responsive store with a functioning cart built using Create-React-App.
 
 ## Getting Started 
 
-### `git clone https://github.com/LaykenV/shoppingcart.git`
- `cd shoppingcart`
- `npm install`
- `npm start`
+### `git clone https://github.com/LaykenV/shoppingcart.git
+     cd shoppingcart
+     npm install
+     npm start`
 
 ## Objectives
 
