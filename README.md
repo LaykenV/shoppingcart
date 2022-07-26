@@ -1,6 +1,6 @@
 # Project Description
 
-A responsive store with a functioning cart built using Create-React-App.
+A responsive Ferrari store with a functioning cart built using Create-React-App.
 
 [Live Demo](https://laykenv.github.io/shoppingcart)
 
