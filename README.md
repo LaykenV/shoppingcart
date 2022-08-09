@@ -15,7 +15,7 @@ A responsive Ferrari store with a functioning cart built using Create-React-App.
 
 ## Objectives
 
-The main motivation for this work was to design and deploy a multiple page application using `react-router-dom´.
+My main motivation for this work was to design and deploy a multiple page application using `react-router-dom´.
 
 ## Built with
 
