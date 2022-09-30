@@ -15,6 +15,6 @@ function Nav({ cartCount, cartCars }) {
             </div>
         </nav>
     )
-}
+};
 
 export default Nav;
