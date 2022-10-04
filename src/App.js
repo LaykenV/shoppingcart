@@ -74,7 +74,7 @@ const clearCart = () => {
       clickedCar.amount = addAmount[carId];
       setCartCars((prevState) => [...prevState, clickedCar]);
     }
-  }
+  };
 
   useEffect(() => {
     let counter = cartCars.length;
