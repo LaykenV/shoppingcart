@@ -73,7 +73,7 @@ const clearCart = () => {
     } else if (!cartCars.find(element => element.id == carId)) {
       clickedCar.amount = addAmount[carId];
       setCartCars((prevState) => [...prevState, clickedCar]);
-    }
+    };
   };
 
   useEffect(() => {
